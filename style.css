@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #30343F;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #30343F;
+    color: white;
+    flex-direction: row;
+}
+
+.menu-icon img{
+    display: none;
+}
+
+.cont-menu ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.cont-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cont-menu ul li a:hover {
+    color: #8860EF;
+}
+
+.userImg{
+    display: none;
+}
+.CodeHarbor {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+    flex-grow: 1;
+    z-index: 5;
+}
+
+.Image3 {
+    max-width: 50px;
+    z-index: 5;
+}
+
+.logoCH{
+    display: none;
+}
+
+.ImgBack {
+    width: 113vw;
+    height: 100%;
+    left: -15vw;
+    top: 28vh;
+    position: fixed;
+    transform: rotate(-20.47deg);
+    transform-origin: 0 0;
+}
+
+/* Styles for Rectangle1 */
+.Rectangle1 {
+    width: 20vw;
+    height: 74vh;
+    left: 3.5vw;
+    top: 152px;
+    position: absolute;
+    background: #33363E;
+    border: 1px #212A3C solid;
+}
+
+.Line2 {
+    width: 20vw;
+    height: 0px;
+    left: 3.5vw;
+    top: 195px;
+    position: absolute;
+    border: 1px rgba(255, 255, 255, 0.54) solid;
+}
+
+.Explorer {
+    width: 19vw;
+    left: 5vw;
+    top: 166px;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.fileCreation {
+    width: 19vw;
+    left: 14vw;
+    top: 166px;
+    position: absolute;
+}
+
+.fileCreation #createFileBtn {
+    color: white;
+    background-color: #33363E;
+}
+
+.Rectangle2 {
+    width: 72vw;
+    height: 70.15vh;
+    left: 23.55vw;
+    top: 181px;
+    position: absolute;
+    background: #33363E;
+    border: 1px #212A3C solid;
+    color: white;
+}
+
+.Rectangle3 {
+    width: 10vw;
+    height: 29px;
+    left: 23.7vw;
+    top: 152px;
+    position: absolute;
+    background: #33363E;
+}
+
+.ArxiuPy {
+    display: inline;
+    width: 5vw;
+    height: 14px;
+    left: 27.5vw;
+    top: 160px;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.PythonIcon1 {
+    width: 16px;
+    height: 16px;
+    left: 25.8vw;
+    top: 159px;
+    position: absolute;
+}
+
+.Rectangle4 {
+    width: 10vw;
+    height: 29px;
+    left: 33.72vw;
+    top: 152px;
+    position: absolute;
+    background: #30343F;
+}
+
+.Arxiu2Py {
+    display: inline;
+    width: 5vw;
+    height: 14px;
+    left: 37.5vw;
+    top: 160px;
+    position: absolute;
+    color: #99A2C5;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.PythonIcon2 {
+    width: 16px;
+    height: 16px;
+    left: 35.8vw;
+    top: 159px;
+    position: absolute;
+}
+
+.Line1 {
+    width: 10vw;
+    height: 0px;
+    left: 23.7vw;
+    top: 152px;
+    position: absolute;
+    border: 1px #8860EF solid;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: 84%;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.footer-image {
+    max-width: 40px;  
+}
+
+
+@media (max-width: 1200px){
+
+    .fileCreation {
+        width: 15vw;
+        left: 5vw;
+        top: 200px;
+    }
+
+    .Explorer {
+        width: 15vw;
+        left: 5vw;
+        top: 166px;
+        font-size: 14px;
+    } 
+    .footer {
+        margin-left: 70%;
+    }   
+}
+
+@media (max-width: 850px) {
+    
+    .menu-icon{
+        margin: 40px 50px;
+        position: relative;
+        z-index: 20;
+    }
+    
+    .menu-icon img{
+        vertical-align: top;
+        width: 40px;
+        cursor: pointer;
+        display: inline;
+    }
+    
+    .cont-menu{
+        background-color: #212A3C;
+        box-shadow: 2px 0px 5px 2px #30343F;
+        width: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s ease;
+        z-index: 10;
+    }
+
+    .active{
+        transform: translate(-600px);
+    }
+
+    .opacity{
+        opacity: 0.4;
+        transition: all .5s ease;
+    }
+
+    .cont-menu ul{
+        padding: 100px 0px 20px 0px;
+        list-style: none;
+    }
+
+    .cont-menu ul li{
+        color: white;
+        display: block;
+        font-size: 25px;
+        padding:  10px 50px;
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+
+    .logoCH{
+        display: inline;
+        max-width: 150px;
+    }
+
+    .CodeHarbor{
+        display: none;
+    }
+
+    .userImg{
+        display: inline;
+        max-width: 50px;
+    }
+
+    .Image3{
+        display: none;
+    }
+
+    .cont-menu ul li:hover {
+        background-color: #99A2C5;
+        color: #8860EF;
+    }
+
+    .ArxiuPy{
+        display: none;
+    }
+
+    .Arxiu2Py{
+        display: none;
+    }
+
+    .footer {
+        margin-left: 50%;
+    }
+    
+}
+
+@media (max-width: 600px){
+
+    .fileCreation {
+        width: 15vw;
+        left: 5vw;
+        top: 200px;
+    }
+
+    .Explorer {
+        width: 14vw;
+        left: 5vw;
+        top: 166px;
+        font-size: 9px;
+    }    
+}

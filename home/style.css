@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #30343F;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: #30343F;
+    color: white;
+    flex-direction: row;
+}
+
+.cont-menu ul li {
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+
+.cont-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cont-menu ul li a:hover {
+    color: #8860EF;
+}
+
+.userImg{
+    display: none;
+}
+
+.menu-icon img{
+    display: none;
+}
+
+.CodeHarbor {
+    top: -10vh;
+    color: white;
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+    flex-grow: 1;
+    z-index: 10;
+}
+
+.logoCH{
+    display: none;
+}
+
+.Image3 {
+    margin-left: 40%;
+    max-width: 50px;
+    z-index: 5;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.ImgBack {
+    width: 113vw;
+    height: 100%;
+    left: -15vw;
+    top: 28vh;
+    position: fixed;
+    transform: rotate(-20.47deg);
+    transform-origin: 0 0;
+}
+
+.logoCH2{
+    position: relative;
+    display: block;
+    margin: auto;
+    z-index: 10;
+}
+
+.button-control{
+    top:-2vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#Login{
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    color: #30343F;
+    background-color: #99A2C5;
+    z-index: 10;
+    margin-right: 20px;
+}
+
+
+#Signup{
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+    color: #99A2C5;
+    border-color: #99A2C5;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 10;
+    
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: 84%;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.footer-image {
+    max-width: 40px;  
+}
+
+@media (max-width: 850px) {
+    
+    .menu-icon{
+        margin: 40px 50px;
+        position: relative;
+        z-index: 30;
+    }
+    
+    .menu-icon img{
+        vertical-align: top;
+        width: 40px;
+        cursor: pointer;
+        display: inline;
+    }
+    
+    .cont-menu{
+        background-color: #212A3C;
+        box-shadow: 2px 0px 5px 2px #30343F;
+        width: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s ease;
+        z-index: 20;
+    }
+
+    .active{
+        transform: translate(-600px);
+    }
+
+    .opacity{
+        opacity: 0.4;
+        transition: all .5s ease;
+    }
+
+    .cont-menu ul{
+        padding: 100px 0px 20px 0px;
+        list-style: none;
+    }
+
+    .cont-menu ul li{
+        color: white;
+        display: block;
+        font-size: 25px;
+        padding:  10px 50px;
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+    .userImg{
+        display: inline;
+        max-width: 50px;
+    }
+
+    .Image3{
+        display: none;
+    }
+
+    .cont-menu ul li:hover {
+        background-color: #99A2C5;
+        color: #8860EF;
+    }
+
+    .footer {
+        margin-left: 50%;
+    }
+}
